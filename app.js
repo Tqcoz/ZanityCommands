@@ -10,7 +10,7 @@ var prefix = "/"
 client.on('message', message => {
 	if (message.author === client.user) return;
 	if (message.content.startsWith(prefix + 'ping')) {
-		message.channel.sendMessage('```md\nI< Ping >```');
+		message.channel.sendMessage('```md\n< Ping >\n Pong ```');
 	}
 	
 	 if (message.content.startsWith(prefix + 'pong')) {
