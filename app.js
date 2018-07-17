@@ -13,8 +13,8 @@ client.on('message', message => {
 		message.channel.sendMessage('pong');
 	}
 	
-	else if (message.content.startsWith(prefix + 'pong')) {
-		message.channel.sendMessage('ping');
+	 if (message.content.startsWith(prefix + 'pong')) {
+	             message.channel.sendMessage('ping');
 	}
 });
 
